@@ -1,0 +1,1 @@
+../../../RBEFireworks/RBEFireworks/Util/RBEFireworkAdapter+Internal.h

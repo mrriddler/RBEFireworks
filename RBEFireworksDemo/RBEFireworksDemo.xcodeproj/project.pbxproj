@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D506B0C8A0C2A423321E204 /* libPods-RBEFireworksDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A82968640CD0D6EBFA5E26 /* libPods-RBEFireworksDemo.a */; };
+		DC5A04861D56EF9E00FC3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A04851D56EF9E00FC3946 /* main.m */; };
+		DC5A04891D56EF9E00FC3946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A04881D56EF9E00FC3946 /* AppDelegate.m */; };
+		DC5A048C1D56EF9E00FC3946 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A048B1D56EF9E00FC3946 /* ViewController.m */; };
+		DC5A048F1D56EF9E00FC3946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5A048D1D56EF9E00FC3946 /* Main.storyboard */; };
+		DC5A04911D56EF9E00FC3946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5A04901D56EF9E00FC3946 /* Assets.xcassets */; };
+		DC5A04941D56EF9E00FC3946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5A04921D56EF9E00FC3946 /* LaunchScreen.storyboard */; };
+		DC5A049F1D56EF9E00FC3946 /* RBEFireworksDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A049E1D56EF9E00FC3946 /* RBEFireworksDemoTests.m */; };
+		DC5A04AA1D56EF9E00FC3946 /* RBEFireworksDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A04A91D56EF9E00FC3946 /* RBEFireworksDemoUITests.m */; };
+		DC5A04BB1D56F01C00FC3946 /* DemoNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A04B81D56F01C00FC3946 /* DemoNetworkUtil.m */; };
+		DC5A04BC1D56F01C00FC3946 /* DemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5A04BA1D56F01C00FC3946 /* DemoService.m */; };
+		DC5A05151D56F0A000FC3946 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A05141D56F0A000FC3946 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC5A049B1D56EF9E00FC3946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5A04791D56EF9E00FC3946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5A04801D56EF9E00FC3946;
+			remoteInfo = RBEFireworksDemo;
+		};
+		DC5A04A61D56EF9E00FC3946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5A04791D56EF9E00FC3946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5A04801D56EF9E00FC3946;
+			remoteInfo = RBEFireworksDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		983B098034E1970887387F05 /* Pods-RBEFireworksDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBEFireworksDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBEFireworksDemo/Pods-RBEFireworksDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A78815D8C0606B080A03F95C /* Pods-RBEFireworksDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBEFireworksDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBEFireworksDemo/Pods-RBEFireworksDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DC5A04811D56EF9E00FC3946 /* RBEFireworksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBEFireworksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A04851D56EF9E00FC3946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC5A04871D56EF9E00FC3946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC5A04881D56EF9E00FC3946 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC5A048A1D56EF9E00FC3946 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC5A048B1D56EF9E00FC3946 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC5A048E1D56EF9E00FC3946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5A04901D56EF9E00FC3946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5A04931D56EF9E00FC3946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5A04951D56EF9E00FC3946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5A049A1D56EF9E00FC3946 /* RBEFireworksDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBEFireworksDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A049E1D56EF9E00FC3946 /* RBEFireworksDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBEFireworksDemoTests.m; sourceTree = "<group>"; };
+		DC5A04A01D56EF9E00FC3946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5A04A51D56EF9E00FC3946 /* RBEFireworksDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBEFireworksDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A04A91D56EF9E00FC3946 /* RBEFireworksDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBEFireworksDemoUITests.m; sourceTree = "<group>"; };
+		DC5A04AB1D56EF9E00FC3946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5A04B71D56F01C00FC3946 /* DemoNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNetworkUtil.h; sourceTree = "<group>"; };
+		DC5A04B81D56F01C00FC3946 /* DemoNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNetworkUtil.m; sourceTree = "<group>"; };
+		DC5A04B91D56F01C00FC3946 /* DemoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoService.h; sourceTree = "<group>"; };
+		DC5A04BA1D56F01C00FC3946 /* DemoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoService.m; sourceTree = "<group>"; };
+		DC5A05141D56F0A000FC3946 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E4A82968640CD0D6EBFA5E26 /* libPods-RBEFireworksDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RBEFireworksDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5A047E1D56EF9E00FC3946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5A05151D56F0A000FC3946 /* libsqlite3.tbd in Frameworks */,
+				1D506B0C8A0C2A423321E204 /* libPods-RBEFireworksDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04971D56EF9E00FC3946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04A21D56EF9E00FC3946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F23C3D614E6E3F4F7862633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A82968640CD0D6EBFA5E26 /* libPods-RBEFireworksDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC985DC0DE77EA9D3F751319 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				983B098034E1970887387F05 /* Pods-RBEFireworksDemo.debug.xcconfig */,
+				A78815D8C0606B080A03F95C /* Pods-RBEFireworksDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC5A04781D56EF9E00FC3946 = {
+			isa = PBXGroup;
+			children = (
+				DC5A05141D56F0A000FC3946 /* libsqlite3.tbd */,
+				DC5A04831D56EF9E00FC3946 /* RBEFireworksDemo */,
+				DC5A049D1D56EF9E00FC3946 /* RBEFireworksDemoTests */,
+				DC5A04A81D56EF9E00FC3946 /* RBEFireworksDemoUITests */,
+				DC5A04821D56EF9E00FC3946 /* Products */,
+				CC985DC0DE77EA9D3F751319 /* Pods */,
+				0F23C3D614E6E3F4F7862633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5A04821D56EF9E00FC3946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A04811D56EF9E00FC3946 /* RBEFireworksDemo.app */,
+				DC5A049A1D56EF9E00FC3946 /* RBEFireworksDemoTests.xctest */,
+				DC5A04A51D56EF9E00FC3946 /* RBEFireworksDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5A04831D56EF9E00FC3946 /* RBEFireworksDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A04871D56EF9E00FC3946 /* AppDelegate.h */,
+				DC5A04881D56EF9E00FC3946 /* AppDelegate.m */,
+				DC5A048A1D56EF9E00FC3946 /* ViewController.h */,
+				DC5A048B1D56EF9E00FC3946 /* ViewController.m */,
+				DC5A04B71D56F01C00FC3946 /* DemoNetworkUtil.h */,
+				DC5A04B81D56F01C00FC3946 /* DemoNetworkUtil.m */,
+				DC5A04B91D56F01C00FC3946 /* DemoService.h */,
+				DC5A04BA1D56F01C00FC3946 /* DemoService.m */,
+				DC5A048D1D56EF9E00FC3946 /* Main.storyboard */,
+				DC5A04901D56EF9E00FC3946 /* Assets.xcassets */,
+				DC5A04921D56EF9E00FC3946 /* LaunchScreen.storyboard */,
+				DC5A04951D56EF9E00FC3946 /* Info.plist */,
+				DC5A04841D56EF9E00FC3946 /* Supporting Files */,
+			);
+			path = RBEFireworksDemo;
+			sourceTree = "<group>";
+		};
+		DC5A04841D56EF9E00FC3946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A04851D56EF9E00FC3946 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC5A049D1D56EF9E00FC3946 /* RBEFireworksDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A049E1D56EF9E00FC3946 /* RBEFireworksDemoTests.m */,
+				DC5A04A01D56EF9E00FC3946 /* Info.plist */,
+			);
+			path = RBEFireworksDemoTests;
+			sourceTree = "<group>";
+		};
+		DC5A04A81D56EF9E00FC3946 /* RBEFireworksDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A04A91D56EF9E00FC3946 /* RBEFireworksDemoUITests.m */,
+				DC5A04AB1D56EF9E00FC3946 /* Info.plist */,
+			);
+			path = RBEFireworksDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5A04801D56EF9E00FC3946 /* RBEFireworksDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5A04AE1D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemo" */;
+			buildPhases = (
+				3BE93AF39A6A07AF808D6AD3 /* [CP] Check Pods Manifest.lock */,
+				DC5A047D1D56EF9E00FC3946 /* Sources */,
+				DC5A047E1D56EF9E00FC3946 /* Frameworks */,
+				DC5A047F1D56EF9E00FC3946 /* Resources */,
+				5EBAF5CE6F97EB921891A0AA /* [CP] Embed Pods Frameworks */,
+				6E39109DBB9DD99351C6F1E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBEFireworksDemo;
+			productName = RBEFireworksDemo;
+			productReference = DC5A04811D56EF9E00FC3946 /* RBEFireworksDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC5A04991D56EF9E00FC3946 /* RBEFireworksDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5A04B11D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemoTests" */;
+			buildPhases = (
+				DC5A04961D56EF9E00FC3946 /* Sources */,
+				DC5A04971D56EF9E00FC3946 /* Frameworks */,
+				DC5A04981D56EF9E00FC3946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5A049C1D56EF9E00FC3946 /* PBXTargetDependency */,
+			);
+			name = RBEFireworksDemoTests;
+			productName = RBEFireworksDemoTests;
+			productReference = DC5A049A1D56EF9E00FC3946 /* RBEFireworksDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC5A04A41D56EF9E00FC3946 /* RBEFireworksDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5A04B41D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemoUITests" */;
+			buildPhases = (
+				DC5A04A11D56EF9E00FC3946 /* Sources */,
+				DC5A04A21D56EF9E00FC3946 /* Frameworks */,
+				DC5A04A31D56EF9E00FC3946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5A04A71D56EF9E00FC3946 /* PBXTargetDependency */,
+			);
+			name = RBEFireworksDemoUITests;
+			productName = RBEFireworksDemoUITests;
+			productReference = DC5A04A51D56EF9E00FC3946 /* RBEFireworksDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5A04791D56EF9E00FC3946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Robbie;
+				TargetAttributes = {
+					DC5A04801D56EF9E00FC3946 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DC5A04991D56EF9E00FC3946 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DC5A04801D56EF9E00FC3946;
+					};
+					DC5A04A41D56EF9E00FC3946 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DC5A04801D56EF9E00FC3946;
+					};
+				};
+			};
+			buildConfigurationList = DC5A047C1D56EF9E00FC3946 /* Build configuration list for PBXProject "RBEFireworksDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5A04781D56EF9E00FC3946;
+			productRefGroup = DC5A04821D56EF9E00FC3946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5A04801D56EF9E00FC3946 /* RBEFireworksDemo */,
+				DC5A04991D56EF9E00FC3946 /* RBEFireworksDemoTests */,
+				DC5A04A41D56EF9E00FC3946 /* RBEFireworksDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5A047F1D56EF9E00FC3946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5A04941D56EF9E00FC3946 /* LaunchScreen.storyboard in Resources */,
+				DC5A04911D56EF9E00FC3946 /* Assets.xcassets in Resources */,
+				DC5A048F1D56EF9E00FC3946 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04981D56EF9E00FC3946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04A31D56EF9E00FC3946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BE93AF39A6A07AF808D6AD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EBAF5CE6F97EB921891A0AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBEFireworksDemo/Pods-RBEFireworksDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E39109DBB9DD99351C6F1E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBEFireworksDemo/Pods-RBEFireworksDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5A047D1D56EF9E00FC3946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5A048C1D56EF9E00FC3946 /* ViewController.m in Sources */,
+				DC5A04BB1D56F01C00FC3946 /* DemoNetworkUtil.m in Sources */,
+				DC5A04BC1D56F01C00FC3946 /* DemoService.m in Sources */,
+				DC5A04891D56EF9E00FC3946 /* AppDelegate.m in Sources */,
+				DC5A04861D56EF9E00FC3946 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04961D56EF9E00FC3946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5A049F1D56EF9E00FC3946 /* RBEFireworksDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A04A11D56EF9E00FC3946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5A04AA1D56EF9E00FC3946 /* RBEFireworksDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC5A049C1D56EF9E00FC3946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5A04801D56EF9E00FC3946 /* RBEFireworksDemo */;
+			targetProxy = DC5A049B1D56EF9E00FC3946 /* PBXContainerItemProxy */;
+		};
+		DC5A04A71D56EF9E00FC3946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5A04801D56EF9E00FC3946 /* RBEFireworksDemo */;
+			targetProxy = DC5A04A61D56EF9E00FC3946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC5A048D1D56EF9E00FC3946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5A048E1D56EF9E00FC3946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5A04921D56EF9E00FC3946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5A04931D56EF9E00FC3946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5A04AC1D56EF9E00FC3946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5A04AD1D56EF9E00FC3946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5A04AF1D56EF9E00FC3946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983B098034E1970887387F05 /* Pods-RBEFireworksDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				INFOPLIST_FILE = RBEFireworksDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC5A04B01D56EF9E00FC3946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78815D8C0606B080A03F95C /* Pods-RBEFireworksDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				INFOPLIST_FILE = RBEFireworksDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC5A04B21D56EF9E00FC3946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RBEFireworksDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBEFireworksDemo.app/RBEFireworksDemo";
+			};
+			name = Debug;
+		};
+		DC5A04B31D56EF9E00FC3946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RBEFireworksDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBEFireworksDemo.app/RBEFireworksDemo";
+			};
+			name = Release;
+		};
+		DC5A04B51D56EF9E00FC3946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RBEFireworksDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RBEFireworksDemo;
+			};
+			name = Debug;
+		};
+		DC5A04B61D56EF9E00FC3946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RBEFireworksDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youorg.RBEFireworksDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RBEFireworksDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5A047C1D56EF9E00FC3946 /* Build configuration list for PBXProject "RBEFireworksDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A04AC1D56EF9E00FC3946 /* Debug */,
+				DC5A04AD1D56EF9E00FC3946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5A04AE1D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A04AF1D56EF9E00FC3946 /* Debug */,
+				DC5A04B01D56EF9E00FC3946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5A04B11D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A04B21D56EF9E00FC3946 /* Debug */,
+				DC5A04B31D56EF9E00FC3946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5A04B41D56EF9E00FC3946 /* Build configuration list for PBXNativeTarget "RBEFireworksDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A04B51D56EF9E00FC3946 /* Debug */,
+				DC5A04B61D56EF9E00FC3946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5A04791D56EF9E00FC3946 /* Project object */;
+}
